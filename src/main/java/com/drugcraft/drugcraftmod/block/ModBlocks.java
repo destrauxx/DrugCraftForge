@@ -6,9 +6,7 @@ import com.drugcraft.drugcraftmod.item.ModCreativeModeTab;
 import com.drugcraft.drugcraftmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.TallFlowerBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -25,7 +23,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> MARIJUANA_CROP = BLOCKS.register("marijuana_crop",
             () -> new MarijuanaCrop(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
     public static final RegistryObject<Block> WILD_MARIJUANA = registerBlock("wild_marijuana",
-            () -> new TallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noCollission()));
+            () -> new TallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noCollission().noOcclusion()));
+
+    public static final RegistryObject<Block> WILD_TOBACCO = registerBlock("wild_tobacco",
+            () -> new DeadBushBlock(BlockBehaviour.Properties.copy(Blocks.DEAD_BUSH).noCollission().noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
