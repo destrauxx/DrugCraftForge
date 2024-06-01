@@ -1,7 +1,10 @@
 package com.drugcraft.drugcraftmod;
 
+import com.drugcraft.drugcraftmod.block.ModBlocks;
 import com.drugcraft.drugcraftmod.item.ModItems;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -24,6 +27,7 @@ public class DrugCraftMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -44,7 +48,7 @@ public class DrugCraftMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+//            ItemBlockRenderTypes.setRenderLayer(ModBlocks.MARIJUANA_CROP.get(), RenderType.cutout());
         }
     }
 }
