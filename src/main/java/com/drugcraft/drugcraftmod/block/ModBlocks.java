@@ -24,7 +24,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MARIJUANA_CROP = BLOCKS.register("marijuana_crop",
             () -> new MarijuanaCrop(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
-    public static final RegistryObject<Block> WILD_MARIJUANA_CROP = registerBlock("wild_marijuana_crop",
+    public static final RegistryObject<Block> WILD_MARIJUANA = registerBlock("wild_marijuana",
             () -> new TallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noCollission()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

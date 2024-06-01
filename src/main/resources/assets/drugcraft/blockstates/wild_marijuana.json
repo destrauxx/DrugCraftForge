@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "drugcraft:block/wild_marijuana_bottom"
+    },
+    "half=upper": {
+      "model": "drugcraft:block/wild_marijuana_top"
+    }
+  }
+}
