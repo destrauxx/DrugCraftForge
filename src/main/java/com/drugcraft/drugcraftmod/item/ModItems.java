@@ -13,6 +13,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> MARIJUANA_SEEDS = ITEMS.register("marijuana_seeds",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.DRUGCRAFT_TAB)));
+    public static final RegistryObject<Item> MARIJUANA_LEAVES = ITEMS.register("marijuana_leaves",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.DRUGCRAFT_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
