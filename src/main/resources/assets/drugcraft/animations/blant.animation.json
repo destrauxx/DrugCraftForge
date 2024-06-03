@@ -1,10 +1,10 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"item.use": {
+		"blant.use": {
 			"animation_length": 4,
 			"bones": {
-				"rrukaup": {
+				"upper_right_arm": {
 					"rotation": {
 						"0.0": {
 							"vector": [0, 0, 0]
@@ -92,7 +92,7 @@
 						}
 					}
 				},
-				"golova": {
+				"head": {
 					"rotation": {
 						"2.0417": {
 							"vector": [0, 0, 0]
@@ -108,7 +108,7 @@
 						}
 					}
 				},
-				"rrukadown": {
+				"lower_right_arm": {
 					"rotation": {
 						"0.0": {
 							"vector": [0, 0, 0]
@@ -195,7 +195,7 @@
 						}
 					}
 				},
-				"bone": {
+				"elbow": {
 					"rotation": {
 						"vector": [-337.5, -6.2, -21.0197]
 					},

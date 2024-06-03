@@ -19,49 +19,53 @@
 					]
 				},
 				{
-					"name": "golova",
+					"name": "head",
+					"parent": "body",
 					"pivot": [0, 24, 0],
 					"cubes": [
 						{"origin": [-4, 24, -4], "size": [8, 8, 8], "uv": [0, 0]}
 					]
 				},
 				{
-					"name": "rnoga",
+					"name": "right_leg",
 					"pivot": [-2, 12, 0],
 					"cubes": [
 						{"origin": [-4, 0, -2], "size": [4, 12, 4], "uv": [0, 32]}
 					]
 				},
 				{
-					"name": "lnoga",
+					"name": "left_leg",
 					"pivot": [2, 12, 0],
 					"cubes": [
 						{"origin": [0, 0, -2], "size": [4, 12, 4], "uv": [24, 16]}
 					]
 				},
 				{
-					"name": "tors",
+					"name": "body",
 					"pivot": [0, 12, 0],
 					"cubes": [
 						{"origin": [-4, 12, -2], "size": [8, 12, 4], "uv": [0, 16]}
 					]
 				},
 				{
-					"name": "lrukaup",
+					"name": "upper_left_arm",
+					"parent": "body",
 					"pivot": [6, 24, 0],
 					"cubes": [
 						{"origin": [4, 18, -2], "size": [4, 6, 4], "uv": [32, 0]}
 					]
 				},
 				{
-					"name": "rrukadown",
+					"name": "lower_left_arm",
+					"parent": "upper_left_arm",
 					"pivot": [-6, 19, 0],
 					"cubes": [
 						{"origin": [-8, 12, -2], "size": [4, 6, 4], "uv": [16, 32]}
 					]
 				},
 				{
-					"name": "rrukaup",
+					"name": "upper_right_arm",
+					"parent": "body",
 					"pivot": [-6, 24, 0],
 					"cubes": [
 						{"origin": [-8, 18, -2], "size": [4, 6, 4], "uv": [16, 32]}
@@ -75,14 +79,15 @@
 					]
 				},
 				{
-					"name": "lrukadown",
+					"name": "lower_left_leg",
 					"pivot": [0, 0, 0],
 					"cubes": [
 						{"origin": [4, 12, -2], "size": [4, 6, 4], "uv": [32, 0]}
 					]
 				},
 				{
-					"name": "bone",
+					"name": "lower_left_arm",
+					"parent": "upper_left_arm",
 					"pivot": [0, 15, -7],
 					"cubes": [
 						{"origin": [-1, 14, -7], "size": [2, 2, 0], "uv": [0, 0]}
