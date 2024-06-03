@@ -1,0 +1,94 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "blant",
+					"pivot": [-6, 17.75, 0.75],
+					"cubes": [
+						{"origin": [-7, 29.7652, -14.13816], "size": [1, 1, 6], "pivot": [-6, 24, 0], "rotation": [115, 0, 0], "uv": [36, 10]}
+					]
+				},
+				{
+					"name": "golova",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "rnoga",
+					"pivot": [-2, 12, 0],
+					"cubes": [
+						{"origin": [-4, 0, -2], "size": [4, 12, 4], "uv": [0, 32]}
+					]
+				},
+				{
+					"name": "lnoga",
+					"pivot": [2, 12, 0],
+					"cubes": [
+						{"origin": [0, 0, -2], "size": [4, 12, 4], "uv": [24, 16]}
+					]
+				},
+				{
+					"name": "tors",
+					"pivot": [0, 12, 0],
+					"cubes": [
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "uv": [0, 16]}
+					]
+				},
+				{
+					"name": "lrukaup",
+					"pivot": [6, 24, 0],
+					"cubes": [
+						{"origin": [4, 18, -2], "size": [4, 6, 4], "uv": [32, 0]}
+					]
+				},
+				{
+					"name": "rrukadown",
+					"pivot": [-6, 19, 0],
+					"cubes": [
+						{"origin": [-8, 12, -2], "size": [4, 6, 4], "uv": [16, 32]}
+					]
+				},
+				{
+					"name": "rrukaup",
+					"pivot": [-6, 24, 0],
+					"cubes": [
+						{"origin": [-8, 18, -2], "size": [4, 6, 4], "uv": [16, 32]}
+					]
+				},
+				{
+					"name": "smoke",
+					"pivot": [0, 9, -5],
+					"cubes": [
+						{"origin": [-4, 8, -5], "size": [8, 7, 0], "uv": [32, 32]}
+					]
+				},
+				{
+					"name": "lrukadown",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [4, 12, -2], "size": [4, 6, 4], "uv": [32, 0]}
+					]
+				},
+				{
+					"name": "bone",
+					"pivot": [0, 15, -7],
+					"cubes": [
+						{"origin": [-1, 14, -7], "size": [2, 2, 0], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

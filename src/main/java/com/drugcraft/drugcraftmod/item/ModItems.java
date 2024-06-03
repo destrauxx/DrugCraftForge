@@ -2,6 +2,7 @@ package com.drugcraft.drugcraftmod.item;
 
 import com.drugcraft.drugcraftmod.DrugCraftMod;
 import com.drugcraft.drugcraftmod.block.ModBlocks;
+import com.drugcraft.drugcraftmod.item.custom.BlantItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -17,6 +18,9 @@ public class ModItems {
             () -> new ItemNameBlockItem(ModBlocks.MARIJUANA_CROP.get(), new Item.Properties().tab(ModCreativeModeTab.DRUGCRAFT_TAB)));
     public static final RegistryObject<Item> MARIJUANA_LEAVES = ITEMS.register("marijuana_leaves",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.DRUGCRAFT_TAB)));
+
+    public static final RegistryObject<Item> BLANT = ITEMS.register("blant",
+            () -> new BlantItem(new Item.Properties().tab(ModCreativeModeTab.DRUGCRAFT_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
